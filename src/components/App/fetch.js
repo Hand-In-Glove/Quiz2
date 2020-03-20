@@ -3,7 +3,7 @@ import logo from "./logo.svg";
 import "./App.css";
 import axios from "axios";
 function App() {
-  const [post, setPosts] = useState({});
+  const [questions, setQuestions] = useState({});
   const [button, setbutton] = useState(1);
   const [click, setclick] = useState(1);
 
@@ -17,7 +17,7 @@ function App() {
       )
       .then(res => {
         console.log(res.data.results);
-        let T = setPosts(res.data.results);
+        setQuestions(res.data.results);
       })
       .catch(err => {
         console.log(err);
@@ -31,7 +31,7 @@ function App() {
         onChange={e => setbutton(e.target.value)}
       />
       <button type="button" onClick={handleClick}></button>
-      <div>{post.title}</div>
+      <div>{questions.title}</div>
       {/* <ul>
         <ul>
           {posts.map(post => (
