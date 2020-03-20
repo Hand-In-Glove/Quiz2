@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import logo from "./logo.svg";
 import "./App.css";
 import ScoreTracker from "../ScoreTracker/ScoreTracker";
+import Cheddar from "./fetch";
 
 function App() {
   const [score, setScore] = useState(0);
@@ -99,6 +100,7 @@ function App() {
         <Answers answerList={} />
         <img src={logo} className="App-logo" alt="logo" />
         <p>
+          <Cheddar />
           Edit <code>src/App.js</code> and save to reload.
         </p>
         <a
