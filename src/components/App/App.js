@@ -97,11 +97,13 @@ function App() {
     <div className="App">
       <ScoreTracker score={score} curentQuestionNumber={curentQuestionNumber} />
       <header className="App-header">
-        <Answers answerList={} />
-        <img src={logo} className="App-logo" alt="logo" />
+        <img
+          src="https://lh3.googleusercontent.com/proxy/NdpSMUhvJC8DPPdD0-17gAPCHwhbUSSA28xHPIoVu9wGrnpE5tEM2-wviu5JBTCda3htZv3y9O070M56QkrFGDVed-wn6_Eon9rSZxIKBqDrgqkSc65NgiYnZvCNMN4CzqfTBE4"
+          className="App-logo"
+          alt="logo"
+        />
         <p>
           <Cheddar />
-          Edit <code>src/App.js</code> and save to reload.
         </p>
         <a
           className="App-link"
