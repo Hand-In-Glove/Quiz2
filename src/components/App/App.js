@@ -3,6 +3,7 @@ import logo from "./logo.svg";
 import "./App.css";
 import ScoreTracker from "../ScoreTracker/ScoreTracker";
 import Cheddar from "./fetch";
+import QuestionDisplay from "./QuestionDisplay";
 
 function App() {
   const [score, setScore] = useState(0);
@@ -105,14 +106,7 @@ function App() {
         <p>
           <Cheddar />
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+       <QuestionDisplay questionsData={data} />
       </header>
     </div>
   );
