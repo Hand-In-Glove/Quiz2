@@ -1,4 +1,17 @@
-.answersBox{
-    display: flex;
-    flex-wrap: wrap;
+@import url("https://fonts.googleapis.com/css?family=Sen&display=swap");
+
+.answersBox {
+  display: flex;
+  flex-wrap: wrap;
+}
+.Questions {
+  position: relative;
+  left: 40%;
+  font-family: "Sen", sans-serif;
+}
+.Questions > p {
+  position: relative;
+  left: 40%;
+  background-color: beige;
+  font-family: "Sen", sans-serif;
 }
