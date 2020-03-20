@@ -106,7 +106,7 @@ function App() {
         <p>
           <Cheddar />
         </p>
-       <QuestionDisplay questionsData={data} />
+       <QuestionDisplay questionsData={data} setScore={setScore} score={score} currentQuestionNumber={curentQuestionNumber} setCurrentQuestionNumber={setCurrentQuestionNumber}/>
       </header>
     </div>
   );
