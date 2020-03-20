@@ -1,10 +1,10 @@
 import React from "react";
-
+import css from "./Colors.module.css";
 function ScoreTracker({ score, curentQuestionNumber }) {
   return (
     <div>
-      <h2>Score</h2>
-      {`${score} / ${curentQuestionNumber}`}
+      <h2 className={css.Colors}>Score</h2>
+      <h3 className={css.Board}> {`${score} / ${curentQuestionNumber}`} </h3>
     </div>
   );
 }

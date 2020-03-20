@@ -1,0 +1,10 @@
+.Colors {
+  background-color: blue;
+}
+
+.Board {
+  position: relative;
+  left: 40%;
+  background: red;
+  width: 200px;
+}
